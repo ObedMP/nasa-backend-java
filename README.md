@@ -19,7 +19,7 @@ Verificar que todas las herramientas anteriormente hayan sido instaladas de form
 
 ## Objetivos
 
-> Desarrollar un aplicativo que ejecute una tarea automatica cada minuto y permita el consumo de una API de la National Aeronautics and Space Administration - NASA para que los datos obtenidos se almacene en la DB 
+> Desarrollar un aplicativo que ejecute una tarea automática cada minuto y permita el consumo de una API de la National Aeronautics and Space Administration - NASA para que los datos obtenidos se almacene en la DB 
 
 > Desarrollar una API que pueda consumir los datos guardados en la DB y poder mostrarlo en un cliente POSTMAN. 
 
@@ -36,23 +36,23 @@ Actualmente el proyecto cuenta con una seria de package creados los cuales son:
 6. taskscheduler 
 
 Se explica a continuación cada una de ellas:
-> clienterest
-Incluir todo codigo que haga referencia al consumo del  servicio externo NASA. 
+> clienterest:
+Incluir todo código que haga referencia al consumo del  servicio externo NASA. 
 
-> dto 
+> dto: 
 Incluir todas aquellas clases que seran los modelos. 
 
-> entites
+> entites:
 Incluir todas aquellas clases que haran referencia a las tablas de DB.
 
-> repository 
-Incluir todo codigo que haga referencia a la persistencia de datos contra la DB.
+> repository:
+Incluir todo código que haga referencia a la persistencia de datos contra la DB.
 
-> restcontroller
-Incluir todo codigo que haga referencia a la creación de controladores y APIS que serán consumidasm por POSTMAN
+> restcontroller:
+Incluir todo código que haga referencia a la creación de controladores y APIS que serán consumidasm por POSTMAN
 
-> taskscheduler
-Incluir todo codigo que haga referencia al cronometro que se disparara de forma asincrona para ejecutar el consumo de servicio externo NASA
+> taskscheduler:
+Incluir todo código que haga referencia al cronometro que se disparara de forma asíncrona para ejecutar el consumo de servicio externo NASA
 
 Nota: 
 - Se aclara que usted puede crear otros packages, no utilizar algunos de los anteriores explicados si así lo desea; pero siempre y cuando se respete la arquitectura hexagonal. 
@@ -65,7 +65,7 @@ Para esta prueba se utilizara una API expuesta por la NASA, la cuál consiste en
 La API del tipo GET que consumiremos sera la siguiente
 > https://images-api.nasa.gov/search?q={PARAMETRO_BUSQUEDA}
 
-Podemos observar que la estructura de la API recibe un QueryParams {q}, el cuál debe capturar el valor por donde realizar la busqueda, para tal caso el valor que se ocupara sera "apollo 2011", o si en dado caso desea utilizar otras palabras de busqueda podra hacerlo e indicarlas el día de la entrevista. 
+Podemos observar que la estructura de la API recibe un QueryParams {q}, el cuál debe capturar el valor por donde realizar la búsqueda, para tal caso el valor que se ocupara sera "apollo 2011", o si en dado caso desea utilizar otras palabras de busqueda podra hacerlo e indicarlas el día de la entrevista. 
 
 Ejemplo de como se sería la API de busqueda con un paramentro indicado. 
 > https://images-api.nasa.gov/search?q=apollo%2011
@@ -126,11 +126,11 @@ Crear una tabla a nivel de DB la cual contenga los campos
 - nasa_id
 
 #### Importante
-- A la vez se necesita que exista un campo de auditoria para guardar la fecha y hora de creación del registro, el campo puede ser llamado como usted desee. 
+- A la vez se necesita que exista un campo de auditoría para guardar la fecha y hora de creación del registro, el campo puede ser llamado como usted desee. 
 - No olvidar el campo ID y que sea autoincrementable. Queda a su elección de que manera hara que el campo ID sea autoincrementable. 
 
 ### Tarea 2
-Que se pueda consumir el servicio  explicada en el apartado API NASA; esta tarea debe realizarse de manera automatica, ejecutarse cada 1 minuto y almacenar los valores obtenidos de la respuesta a nivel de DB. Los valores a tener que guardar serán los sguientes: 
+Que se pueda consumir el servicio  explicada en el apartado API NASA; esta tarea debe realizarse de manera automática, ejecutarse cada 1 minuto y almacenar los valores obtenidos de la respuesta a nivel de DB. Los valores a tener que guardar serán los sguientes: 
  1. href : Ubicada al mismo nivel de la propiedad data (Se indica con una flecha)
  ```
   "items": [
