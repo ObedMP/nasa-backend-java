@@ -57,6 +57,7 @@ Incluir todo código que haga referencia al cronometro que se disparara de forma
 Nota: 
 - Se aclara que usted puede crear otros packages, no utilizar algunos de los anteriores explicados si así lo desea; pero siempre y cuando se respete la arquitectura hexagonal. 
 - A nivel del archivo POM.XML se han instalado las dependencias necesarias para el uso y desarrollo del proyecto, pero si usted considera conveniente instalar una dependencia extra es libre de hacerlo. 
+- Se crean ciertas clases e interfaces a nivel del proyecto, esto como archivos pruebas, pueda hacer uso de ellos o no. 
 
 ## API NASA
 
@@ -200,7 +201,6 @@ Que se pueda consumir el servicio  explicada en el apartado API NASA; esta tarea
 Crear una API del tipo GET con la cual podamos extraer los datos guardado en la DB y poder visualizarlos en POSTMAN en forma de listado, estos deben ser listado de manera descendente por ID. 
 
 También esperamos que su código sea un reflejo de usted mismo en el trabajo, por lo que estaremos atentos a las elecciones que hará con respecto a la legibilidad y rendimiento del código.
-
 
 ## Submission
 Una vez que complete la prueba, envíe todo el proyecto a **su propio repositorio y hágalo público** y envíenos su enlace de repositorio a sramos@origencorp.net o hello@origencorp.net antes de la hora y la fecha límite para que podamos clonar su proyecto. Más tarde programaremos el día y la hora para realizar la entrevista técnica.
