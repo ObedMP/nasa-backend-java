@@ -3,11 +3,16 @@
 Este test es para poder aplicar a la posición de JAVA Developer. Una vez accedas a este repositorio, sigue los siguientes pasos e indicaciones, por favor leer detalladamente.  
 
 Herramientas a instalar 
-> Instalar Java versión 11 u Open JDK Versión 11. 
+> Instalar Java versión 11 u Open JDK Versión 11.
+ 
 > Instalar Postgresql como servidor de DB.
-> Instalar PGADMIN o tu cliente DB favorito. 
+
+> Instalar PGADMIN o tu cliente DB favorito.
+ 
 > Instalar POSTMAN como cliente API  o tu cliente favorito.
-> Instalar Spring Tool Suit 4 (recomendado) o tu IDE favorito. 
+
+> Instalar Spring Tool Suit 4 (recomendado) o tu IDE favorito.
+ 
 > Instalar GIT. 
 
 Verificar que todas las herramientas anteriormente hayan sido instaladas de forma correcta. 
