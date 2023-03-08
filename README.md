@@ -195,7 +195,7 @@ Que se pueda consumir el servicio  explicada en el apartado API NASA; esta tarea
 
 #### Importante
 - Tomar en cuenta que la propiedad "items" es un arreglo
-- La propiedad data es un arreglo y se busca que solo se utilice la primera posición de dicha propiedad (extraer valores y guardar en DB)
+- La propiedad "data" es un arreglo y se busca que solo se utilice la primera posición de dicha propiedad (extraer valores y guardar en DB)
 
  
 ### Tarea 3
