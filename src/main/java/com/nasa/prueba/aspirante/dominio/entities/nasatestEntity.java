@@ -1,7 +1,10 @@
 package com.nasa.prueba.aspirante.dominio.entities;
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import javax.persistence.*;
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "nasatest")
@@ -10,7 +13,7 @@ public class nasatestEntity {
     @Id
     @Column(name = "ID")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
 
     @Column(name = "href")
     private String href;
@@ -21,17 +24,19 @@ public class nasatestEntity {
     private String title;
     @Column(name = "nasa_id")
     private String nasaId;
+
+    @CreationTimestamp
     @Column(name = "date")
-    private Date date;
+    private LocalDateTime date;
 
     public nasatestEntity() {
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -67,11 +72,11 @@ public class nasatestEntity {
         this.nasaId = nasaId;
     }
 
-    public Date getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 }

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class PruebaRestController {
     PruebaInterfaz pruebaInterfaz;
 
-    @GetMapping
+    @GetMapping("/consume")
     public Iterable<nasatestEntity> getAllData(){
         return pruebaInterfaz.findAll();
     }
