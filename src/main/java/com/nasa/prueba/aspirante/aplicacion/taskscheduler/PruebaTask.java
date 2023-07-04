@@ -36,7 +36,7 @@ public class PruebaTask {
         nasaData.setCenter(nasatestDTO.getCenter());
         nasaData.setTitle(nasatestDTO.getTitle());
         nasaData.setNasaId(nasatestDTO.getNasaId());
-        nasaData.setDate((Date) nasatestDTO.getDate());
+        nasaData.setDate( nasatestDTO.getDate());
         return nasaData;
     }
 }

@@ -1,30 +1,14 @@
 package com.nasa.prueba.aspirante.dominio.dto;
 
-
 import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.List;
 
-public class nasatestDTO {
-    private List<nasaItems> items;
+public class nasaItems {
     private Long id;
     private String href;
     private String center;
     private String title;
     private String nasaId;
     private LocalDateTime date;
-
-    public nasatestDTO() {
-    }
-
-    public nasatestDTO(Long id, String href, String center, String title, String nasaId, LocalDateTime date) {
-        this.id = id;
-        this.href = href;
-        this.center = center;
-        this.title = title;
-        this.nasaId = nasaId;
-        this.date = date;
-    }
 
     public Long getId() {
         return id;
@@ -72,25 +56,5 @@ public class nasatestDTO {
 
     public void setDate(LocalDateTime date) {
         this.date = date;
-    }
-
-    public List<nasaItems> getItems() {
-        return items;
-    }
-
-    public void setItems(List<nasaItems> items) {
-        this.items = items;
-    }
-
-    @Override
-    public String toString() {
-        return "nasatestDTO{" +
-                "id=" + id +
-                ", href='" + href + '\'' +
-                ", center='" + center + '\'' +
-                ", title='" + title + '\'' +
-                ", nasaId='" + nasaId + '\'' +
-                ", date=" + date +
-                '}';
     }
 }
