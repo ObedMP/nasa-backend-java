@@ -1,6 +1,8 @@
 package com.nasa.prueba.aspirante.dominio.dto;
 
 
+import java.util.Date;
+
 public class nasatestDTO {
 
     private int id;
@@ -8,12 +10,12 @@ public class nasatestDTO {
     private String center;
     private String title;
     private String nasaId;
-    private String date;
+    private Date date;
 
     public nasatestDTO() {
     }
 
-    public nasatestDTO(int id, String href, String center, String title, String nasaId, String date) {
+    public nasatestDTO(int id, String href, String center, String title, String nasaId, Date date) {
         this.id = id;
         this.href = href;
         this.center = center;
@@ -62,11 +64,11 @@ public class nasatestDTO {
         this.nasaId = nasaId;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 }
